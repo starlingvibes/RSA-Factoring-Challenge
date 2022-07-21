@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Factorize as many numbers as possible into a product of two smaller numbers.
     Usage: factors <file>
@@ -33,7 +33,7 @@ def fc():
         with open(file) as f:
             for num in f:
                 num = int(num)
-                data = "{:d}={:d}*{:d}"
+                data = "{}={}*{}"
                 if num % 2 == 0:
                     print(data.format(num, num // 2, 2))
                     continue
